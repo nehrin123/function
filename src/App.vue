@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <buttons/>
+    <cascade/>
+    <Checkbox/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import buttons from './components/buttons.vue'
+import cascade from './components/cascade.vue'
+import Checkbox from './components/Checkbox.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    buttons,
+    cascade,
+    Checkbox
   }
 }
 </script>
